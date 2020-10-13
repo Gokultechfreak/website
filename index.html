@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>ExploreNew</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="LearnNew">
+	<meta name="keywords" content="LearnNew">
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" href="style/bootstrap.min.css"/>
+	<script src="angular.min.js"></script>
+    <script src="Favouritecourse.js"></script>
+	<!--<link rel="stylesheet" href="style/font-awesome.min.css"/>
+	<link rel="stylesheet" href="style/owl.carousel.css"/>-->
+</head>
+
+<body>
+  <header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<h2 style="color:blue">ExploreNew</h2>
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					<nav class="main-menu">
+						
+							<a href="index.html" class="btn btn-primary">Home</a>&nbsp;&nbsp;&nbsp;
+							<a href="aboutus.html" class="btn btn-primary">About us</a>&nbsp;&nbsp;&nbsp;
+							<a href="courses.html" class="btn btn-primary">Courses</a>&nbsp;&nbsp;&nbsp;
+							<a href="blog.html" class="btn btn-primary">News</a>&nbsp;&nbsp;&nbsp;
+							<a href="contact.html" class="btn btn-primary">Contact</a>&nbsp;&nbsp;&nbsp;
+							<a href="" class="btn btn-primary" class="btn btn-primary">Login</a>
+						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+		  <section class="hero-section" style="background-image:url('img/image.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+		<div class="container">
+			<div class="hero-text text-white">
+				<h2>Get The Best Online Courses</h2>
+				
+			</div>
+			
+			 <div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<form class="intro-newslatter">
+					    
+						<input type="text" placeholder="Name" ><br><br>
+						<input type="text" placeholder="E-mail"><br><br>
+						<input type="text" placeholder="New Password"><br><br>
+						<input type="text" placeholder="Confirm Password">&nbsp;&nbsp;&nbsp;&nbsp;
+						<button class="btn btn-primary">Sign Up</button>
+					</form>
+				</div>
+			  </div>
+			
+		</div>
+	</section>
+	<section class="categories-section spad">
+		<div class="container">
+			<div class="content">
+				                                   <h3>Our Course Categories</h3>
+				<p style="font-size:19px";>Start learning on-demand video lectures today from top instructors in subjects like business, computer science, data science, 
+				language learning, & more..</p>
+			</div>
+			<div class="row">
+				<!-- categorie -->
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/1.jpg"></div>
+						<div class="ci-text">
+							<h5>IT Development</h5>
+							<p>some of the courses related to IT development</p>
+							<span>Add to Cart</span>
+						</div>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/2.jpg"></div>
+						<div class="ci-text">
+							<h5>Web Design</h5>
+							<p>designing web and UI</p>
+							<span>Add to cart</span>
+						</div>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/3.jpg"></div>
+						<div class="ci-text">
+							<h5>Illustration & Drawing</h5>
+							<p>Engineering drawing and illurtrations</p>
+							<span>Add to cart</span>
+						</div>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/4.jpg"></div>
+						<div class="ci-text">
+							<h5>Social Media</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur</p>
+							<span>Add to cart</span>
+						</div>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/5.jpg"></div>
+						<div class="ci-text">
+							<h5>Photoshop</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur</p>
+							<span>220 Courses</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="img/categories/6.jpg"></div>
+						<div class="ci-text">
+							<h5>Cryptocurrencies</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur</p>
+							<span>25 Courses</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-primary" >Explore More</button>
+		</div>
+	</section>
+	<section class="search-section">
+		<div class="container">
+			<div class="search-warp">
+				<div class="content">
+					<h3>select your favourite course</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<!-- search form -->
+						<form class="course-search-form" ng-app="FavouritecourseApp">
+							<!--<input type="text" placeholder="Course">
+							<input type="text" class="last-m" placeholder="Category"><br><br>
+							<button  class="site-btn" style="text-align:center">Search Couse</button>-->
+							<!--Custom Service-->
+                            <div ng-controller='favoAddController as courseAdder'>
+                              <input type="text" ng-model="courseAdder.courseName" placeholder="Category">
+                              <input type="text" ng-model="courseAdder.category" placeholder="Course Name"><br><br>
+                              <br><br><button class="btn btn-primary" ng-click="courseAdder.addItem();">Add Course to Favourite</button>
+                            </div>
+							<div ng-controller='favoAddShowController as showList'>
+							  <ol>
+								<li ng-repeat="item in showList.items">
+								  {{ item.category }} {{ item.courseName }}
+								  <button class="btn btn-primary" ng-click="showList.removeItem($index);">Remove Item</button>
+								</li>
+							  </ol>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+   
+</body>
+</html>
